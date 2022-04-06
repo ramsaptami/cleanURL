@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tshowAlert(appsmith.URL.pathname)\n\t}",
+      "body": "() => {\n\t\tshowAlert(appsmith.URL.pathname)\n\t\treturn storeValue('url', appsmith.URL.pathname)\n\t\tshowAlert(\"path from url \", appsmith.store.url)\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tshowAlert(appsmith.URL.pathname)\n\t}"
+      "() => {\n\t\tshowAlert(appsmith.URL.pathname)\n\t\treturn storeValue('url', appsmith.URL.pathname)\n\t\tshowAlert(\"path from url \", appsmith.store.url)\n\t}"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

@@ -65,7 +65,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "() => {\n\t\tshowAlert(appsmith.URL.pathname)\n\t}"
+                "() => {\n\t\tshowAlert(appsmith.URL.pathname)\n\t\treturn storeValue('url', appsmith.URL.pathname)\n\t\tshowAlert(\"path from url \", appsmith.store.url)\n\t}"
               ],
               "timeoutInMillisecond": 10000
             }
