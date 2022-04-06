@@ -27,7 +27,13 @@
           "children": [
             {
               "widgetName": "Button1",
+              "onClick": "",
               "buttonColor": "#03B365",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca02633.svg",
               "topRow": 5,
@@ -37,7 +43,13 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 14.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "leftColumn": 8,
+              "dynamicBindingPathList": [],
               "text": "Submit",
               "isDisabled": false,
               "key": "el5enoxom6",
@@ -52,6 +64,103 @@
               "isLoading": false,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
+            },
+            {
+              "widgetName": "Tabs1",
+              "isCanvas": true,
+              "displayName": "Tabs",
+              "iconSVG": "/static/media/icon.74a6d653.svg",
+              "topRow": 11,
+              "bottomRow": 51,
+              "parentRowSpace": 10,
+              "type": "TABS_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": false,
+              "animateLoading": true,
+              "parentColumnSpace": 14.0625,
+              "leftColumn": 2,
+              "children": [
+                {
+                  "tabId": "tab1",
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 400,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [],
+                  "isDisabled": false,
+                  "key": "ssy0bgchoe",
+                  "tabName": "Tab 1",
+                  "rightColumn": 337.5,
+                  "detachFromLayout": true,
+                  "widgetId": "ogwwafx1af",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "chyop7bk9e",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                },
+                {
+                  "tabId": "tab2",
+                  "widgetName": "Canvas2",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 400,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [],
+                  "isDisabled": false,
+                  "key": "ssy0bgchoe",
+                  "tabName": "Tab 2",
+                  "rightColumn": 337.5,
+                  "detachFromLayout": true,
+                  "widgetId": "o50aau9eip",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "chyop7bk9e",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "key": "ngqtjal2c5",
+              "rightColumn": 44,
+              "widgetId": "chyop7bk9e",
+              "defaultTab": "Tab 1",
+              "shouldShowTabs": true,
+              "tabsObj": {
+                "tab1": {
+                  "label": "Tab 1",
+                  "id": "tab1",
+                  "widgetId": "ogwwafx1af",
+                  "isVisible": true,
+                  "index": 0
+                },
+                "tab2": {
+                  "label": "Tab 2",
+                  "id": "tab2",
+                  "widgetId": "o50aau9eip",
+                  "isVisible": true,
+                  "index": 1
+                }
+              },
+              "isVisible": true,
+              "version": 3,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false
             }
           ]
         },
@@ -73,7 +182,10 @@
         ],
         "widgetNames": [
           "Button1",
-          "MainContainer"
+          "Canvas1",
+          "Canvas2",
+          "MainContainer",
+          "Tabs1"
         ],
         "validOnPageLoadActions": true,
         "id": "Page1",
