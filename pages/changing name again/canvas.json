@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "name change",
-    "slug": "name-change",
+    "name": "changing name again",
+    "slug": "changing-name-again",
     "layouts": [
       {
         "viewMode": false,
@@ -185,9 +185,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "name change_JSObject1.myFun1",
+              "id": "changing name again_JSObject1.myFun1",
               "name": "JSObject1.myFun1",
-              "collectionId": "name change_JSObject1",
+              "collectionId": "changing name again_JSObject1",
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
@@ -199,7 +199,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "name change",
+        "id": "changing name again",
         "deleted": false,
         "policies": [],
         "userPermissions": []

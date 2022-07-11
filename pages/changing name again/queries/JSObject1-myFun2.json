@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject1.myFun1",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject1.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,17 +13,17 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "name change",
-    "collectionId": "name change_JSObject1",
+    "pageId": "changing name again",
+    "collectionId": "changing name again_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  showAlert(appsmith.URL.pathname);\n  return storeValue('url', appsmith.URL.pathname);\n  showAlert(\"path from url \", appsmith.store.url);\n}",
+      "body": "async () => {}",
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  showAlert(appsmith.URL.pathname);\n  return storeValue('url', appsmith.URL.pathname);\n  showAlert(\"path from url \", appsmith.store.url);\n}"
+      "async () => {}"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "name change_JSObject1.myFun1",
+  "id": "changing name again_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "624dc2eebf89be21c7d467e2_624dcef7bf89be21c7d46878"
+  "gitSyncId": "624dc2eebf89be21c7d467e2_624dcef7bf89be21c7d46879"
 }

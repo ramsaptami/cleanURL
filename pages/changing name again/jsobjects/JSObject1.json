@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "JSObject1",
-    "pageId": "name change",
+    "pageId": "changing name again",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -18,7 +18,7 @@
       }
     ]
   },
-  "id": "name change_JSObject1",
+  "id": "changing name again_JSObject1",
   "deleted": false,
   "gitSyncId": "624dc2eebf89be21c7d467e2_624dcef7bf89be21c7d4687c"
 }
