@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "main page 1",
-    "slug": "main-page-1",
+    "name": "name change",
+    "slug": "name-change",
     "layouts": [
       {
         "viewMode": false,
@@ -19,13 +19,14 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 54,
+          "version": 59,
           "minHeight": 670,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "Button1",
               "onClick": "",
               "buttonColor": "#03B365",
@@ -53,6 +54,7 @@
               "text": "Submit",
               "isDisabled": false,
               "key": "el5enoxom6",
+              "labelTextSize": "0.875rem",
               "rightColumn": 24,
               "isDefaultClickDisabled": true,
               "widgetId": "yvjojeib8x",
@@ -62,10 +64,12 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Tabs1",
               "isCanvas": true,
               "displayName": "Tabs",
@@ -79,9 +83,15 @@
               "animateLoading": true,
               "parentColumnSpace": 14.0625,
               "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
+                  "boxShadow": "none",
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -97,6 +107,7 @@
                   "children": [],
                   "isDisabled": false,
                   "key": "ssy0bgchoe",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Tab 1",
                   "rightColumn": 337.5,
                   "detachFromLayout": true,
@@ -105,10 +116,12 @@
                   "version": 1,
                   "parentId": "chyop7bk9e",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab2",
+                  "boxShadow": "none",
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -124,6 +137,7 @@
                   "children": [],
                   "isDisabled": false,
                   "key": "ssy0bgchoe",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Tab 2",
                   "rightColumn": 337.5,
                   "detachFromLayout": true,
@@ -132,12 +146,15 @@
                   "version": 1,
                   "parentId": "chyop7bk9e",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "ngqtjal2c5",
+              "labelTextSize": "0.875rem",
               "rightColumn": 44,
               "widgetId": "chyop7bk9e",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "Tab 1",
               "shouldShowTabs": true,
               "tabsObj": {
@@ -160,28 +177,29 @@
               "version": 3,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "0px"
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "main page 1_JSObject1.myFun1",
+              "id": "name change_JSObject1.myFun1",
               "name": "JSObject1.myFun1",
-              "collectionId": "main page 1_JSObject1",
+              "collectionId": "name change_JSObject1",
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "() => {\n\t\tshowAlert(appsmith.URL.pathname)\n\t\treturn storeValue('url', appsmith.URL.pathname)\n\t\tshowAlert(\"path from url \", appsmith.store.url)\n\t}"
+                "() => {\n  showAlert(appsmith.URL.pathname);\n  return storeValue('url', appsmith.URL.pathname);\n  showAlert(\"path from url \", appsmith.store.url);\n}"
               ],
               "timeoutInMillisecond": 10000
             }
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "main page 1",
+        "id": "name change",
         "deleted": false,
         "policies": [],
         "userPermissions": []
