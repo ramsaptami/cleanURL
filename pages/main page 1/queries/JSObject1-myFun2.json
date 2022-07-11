@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getOnTimeDeliveries",
-    "fullyQualifiedName": "Utils.getOnTimeDeliveries",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject1.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,17 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Home",
-    "collectionId": "Home_Utils",
+    "pageId": "main page 1",
+    "collectionId": "main page 1_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tconst arr = GetAllOrders.data.map(x => parseInt(x.On_time))\n\t\treturn ((arr.reduce((a, b) => a + b, 0))/(GetAllOrders.data.length)).toFixed(2)\n\t}",
+      "body": "async () => {\n\t\t//use async-await or promises\n\t}",
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -33,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tconst arr = GetAllOrders.data.map(x => parseInt(x.On_time))\n\t\treturn ((arr.reduce((a, b) => a + b, 0))/(GetAllOrders.data.length)).toFixed(2)\n\t}"
+      "async () => {\n\t\t//use async-await or promises\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Home_Utils.getOnTimeDeliveries",
+  "id": "main page 1_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "61d55a3da4437918c021e514_6218832f445a8d746a05eb3d"
+  "gitSyncId": "624dc2eebf89be21c7d467e2_624dcef7bf89be21c7d46879"
 }

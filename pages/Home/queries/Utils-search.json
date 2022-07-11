@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getRefunds",
-    "fullyQualifiedName": "Utils.getRefunds",
+    "name": "search",
+    "fullyQualifiedName": "Utils.search",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tconst arr = GetAllOrders.data.map(x => parseInt(x.refundStatus))\n\t\treturn ((arr.reduce((a, b) => a + b, 0))/(GetAllOrders.data.length)).toFixed(2)\n\t}",
+      "body": "() => {\n  if (Input1.text.length == 0) {\n    return getCustomer.data;\n  } else {\n    return getAllCustomers.data.filter(word => word.CName.toLowerCase().includes(Input1.text.toLowerCase()));\n  }\n}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tconst arr = GetAllOrders.data.map(x => parseInt(x.refundStatus))\n\t\treturn ((arr.reduce((a, b) => a + b, 0))/(GetAllOrders.data.length)).toFixed(2)\n\t}"
+      "() => {\n  if (Input1.text.length == 0) {\n    return getCustomer.data;\n  } else {\n    return getAllCustomers.data.filter(word => word.CName.toLowerCase().includes(Input1.text.toLowerCase()));\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Home_Utils.getRefunds",
+  "id": "Home_Utils.search",
   "deleted": false,
-  "gitSyncId": "61d55a3da4437918c021e514_6218832f445a8d746a05eb3e"
+  "gitSyncId": "61d55a3da4437918c021e514_6221bc5245ea27345b4953d9"
 }

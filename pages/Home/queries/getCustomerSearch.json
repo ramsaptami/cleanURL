@@ -82,15 +82,91 @@
             }
           ]
         }
-      ]
+      ],
+      "formData": {
+        "command": {
+          "data": "FETCH_MANY",
+          "viewType": "component",
+          "componentData": "FETCH_MANY"
+        },
+        "entityType": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "pagination": {
+          "data": {
+            "offset": "{{(List1.pageNo-1)*List1.pageSize}}",
+            "limit": "5"
+          },
+          "viewType": "component",
+          "componentData": {
+            "offset": "{{(List1.pageNo-1)*List1.pageSize}}",
+            "limit": "5"
+          }
+        },
+        "queryFormat": {
+          "data": "ROWS",
+          "viewType": "component",
+          "componentData": "ROWS"
+        },
+        "rowIndex": {
+          "data": "0",
+          "viewType": "component",
+          "componentData": "0"
+        },
+        "sheetName": {
+          "data": "Customer_Details",
+          "viewType": "component",
+          "componentData": "Customer_Details"
+        },
+        "sheetUrl": {
+          "data": "https://docs.google.com/spreadsheets/d/1knJa4mcjEtvdyUnjFiWBBeNkpNyimXWITAwGhjB9d_M/edit",
+          "viewType": "component",
+          "componentData": "https://docs.google.com/spreadsheets/d/1knJa4mcjEtvdyUnjFiWBBeNkpNyimXWITAwGhjB9d_M/edit"
+        },
+        "smartSubstitution": {
+          "data": true,
+          "viewType": "component",
+          "componentData": true
+        },
+        "tableHeaderIndex": {
+          "data": "1",
+          "viewType": "component",
+          "componentData": "1"
+        },
+        "where": {
+          "data": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "EQ",
+                "value": "{{Input1.text}}",
+                "key": "CName"
+              }
+            ]
+          },
+          "viewType": "component",
+          "componentData": {
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "EQ",
+                "value": "{{Input1.text}}",
+                "key": "CName"
+              }
+            ]
+          }
+        }
+      }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "pluginSpecifiedTemplates[8].value"
+        "key": "formData.pagination.data.offset"
       },
       {
-        "key": "pluginSpecifiedTemplates[14].value[0].value"
+        "key": "formData.where.data"
       }
     ],
     "isValid": true,
